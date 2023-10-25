@@ -1,0 +1,15 @@
+﻿@model Veiculo
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar Veiculo</h1>
+
+<a asp-action="index">Veículos</a>
+<form asp-action="Editar">
+ 
+    <partial name="_Form"></partial>
+
+    <botao texto="Editar"></botao>
+</form>

@@ -1,0 +1,18 @@
+﻿@model Veiculo
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+<alert texto="@TempData["mensagem"]"></alert>
+
+<a asp-action="index">Veículos</a>
+<form asp-action="Cadastrar">
+   
+    <!--Adicionar o conteudo do arquivo _Form.cshtml-->
+    <partial name="_Form"></partial>
+
+    <botao></botao>
+</form>
